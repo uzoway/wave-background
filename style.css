@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background: rgb(8, 60, 156);
+  position: relative;;
+}
+
+.banner .wave{
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(wave.png);
+  background-size: 1000px 20vh;
+  background-position: center;
+  border: 0;
+}
+
+.banner .wave1{
+  animation: move 15s linear infinite;
+}
+
+@keyframes move{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+
+.banner .wave2{
+  animation: mover 5s linear infinite;
+  opacity: 0.6;
+  bottom: 15px;
+  animation-delay: -0.7s;
+}
+
+@keyframes mover{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}
+
+.banner .wave3 {
+  animation: move 10s linear infinite;
+  opacity: 0.3;
+  bottom: 35px;
+  animation-delay: -0.5s;
+}
+
+.banner .wave4 {
+  animation: mover 10s linear infinite;
+  opacity: 0.3;
+  bottom: 30px;
+  animation-delay: -0.4s;
+}
